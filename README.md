@@ -7,6 +7,22 @@ An automatic Google slides presentation creator for lyrics. Currently utilizatio
 
 The current iteration of the project is only capable of making a max of three songs. This may be updated in the future, but because most worship sessions usually only have around three songs, this amount was considered to be the most optimal amount to account for computer resource efficiency. In the case that more songs are required, simply run the script once with the initial desired songs, and then add the desired songs afterwards onto the built presentation.
 
+
+# Prerequisites 
+
+You must have made a google slides project already. Additionally, you must have one singular slide with a text box in which you wish to paste the text in. It does not need to have any text, but a text box must be present.
+
+
+![placeholder](https://github.com/ZechariahWang/SCCEFC_Visual_Generator/assets/97078224/21653211-7a2e-493b-812d-1e05b6d9573c)
+
+Once the presentation is created, copy the presentation URL and paste it into the presentation at line: 
+
+``` 
+const PRESENTATION_URL = "https://docs.google.com/presentation/d/1WbDwm1-TkXlS6rdM_P4CQFuwrC7Vzk5GcL1c5r8XO30/edit#slide=id.SLIDES_API596554833_30";
+```
+
+# Creating a Presentation
+
 In the case less than three songs are required, you may disable song creation through the three constants:
 
 ```
@@ -84,6 +100,5 @@ FIRST_SONG_NAME = MAN_OF_SORROWS_NAME;
 FIRST_SONG_LYRICS = MAN_OF_SORROWS_LYRICS;
 FIRST_SONG_ORDER = MAN_OF_SORROWS_ORDER;
 ```
-
 
 
