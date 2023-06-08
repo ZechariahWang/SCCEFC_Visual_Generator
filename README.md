@@ -31,7 +31,6 @@ In the case less than three songs are required, you may disable song creation th
 const FIRST_SONG_ENABLED = true;
 const SECOND_SONG_ENABLED = true;
 const THIRD_SONG_ENABLED = false;
-
 ```
 
 You may also disable or enable the presentation title screen using the constant:
