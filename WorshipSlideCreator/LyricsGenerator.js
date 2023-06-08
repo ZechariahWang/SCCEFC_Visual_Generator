@@ -25,6 +25,7 @@ const FIRST_SONG_ENABLED = true;
 const SECOND_SONG_ENABLED = true;
 const THIRD_SONG_ENABLED = false;
 const TITLE_ENABLED = true;
+const END_SCREEN_ENABLED = true;
 
 /*
 Font and title text config
@@ -277,10 +278,9 @@ function createSlidesPresentation() {
   if (THIRD_SONG_ENABLED == true) { create_third_song(); }
   if (SECOND_SONG_ENABLED == true) { create_second_song(); }
   if (FIRST_SONG_ENABLED == true) { create_first_song(); }
-  if (TITLE_ENABLED == true) { make_presentation_title_slide(); }
-
-  add_date();
-  create_end_slide();
+  if (TITLE_ENABLED == true) { make_presentation_title_slide(); add_date(); }
+  if (END_SCREEN_ENABLED == true) { create_end_slide(); }
+  
 
   presentation.saveAndClose();
   Logger.log('Presentation edited with URL: ' + presentation.getUrl());
