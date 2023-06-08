@@ -3,17 +3,19 @@
 
 # SCCEFC Worship Lyrics Generator 
 
-An automatic Google slides presentation creator for lyrics. Currently utilization is only within the Shine Youth Fellowship for grades 10-12.
+An automatic Google slides presentation creator for lyrics. Currently utilization is only within the Shine Youth Fellowship for grades 10-12. However, further development is being considered for other departments of worship.
 
 The current iteration of the project is only capable of making a max of three songs. This may be updated in the future, but because most worship sessions usually only have around three songs, this amount was considered to be the most optimal amount to account for computer resource efficiency. In the case that more songs are required, simply run the script once with the initial desired songs, and then add the desired songs afterwards onto the built presentation.
 
 
 # Prerequisites 
 
+If you wish to create a lyrics slide presentation, there are a couple prerequisites you must already have in order for the presentation to work.
+
 You must have made a google slides project already. Additionally, you must have one singular slide with a text box in which you wish to paste the text in. It does not need to have any text, but a text box must be present.
 
 
-![placeholder](https://github.com/ZechariahWang/SCCEFC_Visual_Generator/assets/97078224/21653211-7a2e-493b-812d-1e05b6d9573c)
+![presentation_new](https://github.com/ZechariahWang/SCCEFC_Visual_Generator/assets/97078224/106fb041-1c44-43c6-a15c-f4cad7e123c9)
 
 Once the presentation is created, copy the presentation URL and paste it into the presentation at line: 
 
@@ -100,5 +102,9 @@ FIRST_SONG_NAME = MAN_OF_SORROWS_NAME;
 FIRST_SONG_LYRICS = MAN_OF_SORROWS_LYRICS;
 FIRST_SONG_ORDER = MAN_OF_SORROWS_ORDER;
 ```
+
+## Authors
+
+- Zechariah Wang, Summer Intern (2023)
 
 
