@@ -61,7 +61,7 @@ const PRESENTATION_DATE = "06/02/23";
 
 # Adding Songs 
 
-As of Shine 2023, the data samples of songs are currently extremely limited. Because worship planning rarely follows the exact order of the original song, I decided the best format for creating new songs would be allowing the AV user to customize the order and lyrics of each song personally. If you wish to add your own songs, there are a few steps you must follow:
+As of Shine 2023, the data samples of songs contain all songs used during the 2023 Shine Fellowship year, and 2023 RISE workshop. Because worship planning rarely follows the exact order of the original song, I decided the best format for creating new songs would be allowing the AV user to customize the order and lyrics of each song personally. The majority of popular worship songs used in SCCEFC English Congregation should be covered by the database. If you wish to add your own songs, or the song you wish to use is not found within the database, here are the steps to adding a new song:
 
 ### Create a Song Title Data Type
 
