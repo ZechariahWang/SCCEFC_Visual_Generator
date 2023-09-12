@@ -569,6 +569,37 @@ let MIGHTY_TO_SAVE_LYRICS = {
 };
 let MIGHTY_TO_SAVE_ORDER = ["V1", "C", "V2", "C", "B", "C", "B", "C"];
 
+/*
+Song Title: 10K Reasons
+Date Added: December 10th 2023
+From: Zechariah Wang
+*/
+
+let TEN_K_REASONS_NAME = "10,000 Reasons";
+let TEN_K_REASONS_LYRICS = {
+  V1 : "The sun comes up, it’s a new day dawning \n It’s time to sing Your song again \n Whatever may pass and whatever lies before me, \n Let me be singing when the evening comes",
+  C : "Bless the Lord, O my soul, \n O my soul, worship His holy Name \n Sing like never before, O my soul \n I’ll worship Your holy Name",
+  V2 : "You’re rich in love and You’re slow to anger, \n Your Name is great and Your heart is kind \n For all Your goodness I will keep on singing, \n Ten thousand reasons for my heart to find",
+  V3 : "And on that day when my strength is failing, \n The end draws near and my time has come \n Still my soul sings Your praise unending, \n Ten thousand years and then forevermore",
+};
+let TEN_K_REASONS_ORDER = ["V1", "C", "V2", "C", "V3", "C"];
+
+/*
+Song Title: My Lighthouse
+Date Added: December 10th 2023
+From: Zechariah Wang
+*/
+
+let MY_LIGHTHOUSE_NAME = "My Lighthouse";
+let MY_LIGHTHOUSE_LYRICS = {
+  V1 : "In my wrestling and in my doubts \n In my failures You won’t walk out \n Your great love will lead me through \n You are the peace in my troubled sea whoa oh \n You are the peace in my troubled sea",
+  C : "My Lighthouse my Lighthouse \n Shining in the darkness \n I will follow You oh \n My Lighthouse my Lighthouse \n I will trust the promise \n You will carry me safe to shore \n Safe to shore safe to shore safe to shore",
+  V2 : "In the silence You won’t let go \n In the questions Your truth will hold \n Your great love will lead me through \n You are the peace in my troubled sea whoa oh \n You are the peace in my troubled sea",
+  V3 : "I won’t fear what tomorrow brings \n With each morning I’ll rise and sing \n My God’s love will lead me through \n You are the peace in my troubled sea whoa oh \n You are the peace in my troubled sea",
+  B : "Fire before us \n You’re the brightest \n You will lead us \n Through the storms"
+};
+let MY_LIGHTHOUSE_ORDER = ["V1", "V2", "C", "V3", "C", "B", "C"];
+
 
 // Song Data END
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -680,17 +711,6 @@ function make_presentation_title_slide(){
   let textStyle = textRange.getTextStyle();
   textStyle.setFontSize(TITLE_SLIDE_FONT_SIZE); 
   shape.getText().setText(PRESENTATION_NAME);
-
-  let date = presentation_title.insertTextBox(PRESENTATION_DATE);
-  date.setWidth(100);
-  date.setHeight(50);
-  date.setTop(100);
-  date.getText().setText(PRESENTATION_DATE);
-  let text_range = date.getText();
-  let text_style = textRange.getTextStyle();
-  text_style.setForegroundColor("#FFFFFF")
-  textStyle.setFontSize(INTRO_SLIDE_FONT_SIZE);
-  date.setContentAlignment(SlidesApp.ContentAlignment.MIDDLE);
 }
 
 function add_date() {
@@ -728,13 +748,13 @@ FIRST_SONG_NAME = ARRIVAL_NAME;
 FIRST_SONG_LYRICS = ARRIVAL_LYRICS;
 FIRST_SONG_ORDER = ARRIVAL_ORDER;
 
-SECOND_SONG_NAME = FIRM_FOUNDATION_NAME;
-SECOND_SONG_LYRICS = FIRM_FOUNDATION_LYRICS;
-SECOND_SONG_ORDER = FIRM_FOUNDATION_ORDER;
+SECOND_SONG_NAME = TEN_K_REASONS_NAME;
+SECOND_SONG_LYRICS = TEN_K_REASONS_LYRICS;
+SECOND_SONG_ORDER = TEN_K_REASONS_ORDER;
 
-THIRD_SONG_NAME = WAY_MAKER_NAME;
-THIRD_SONG_LYRICS = WAY_MAKER_LYRICS;
-THIRD_SONG_ORDER = WAY_MAKER_ORDER;
+THIRD_SONG_NAME = MY_LIGHTHOUSE_NAME;
+THIRD_SONG_LYRICS = MY_LIGHTHOUSE_LYRICS;
+THIRD_SONG_ORDER = MY_LIGHTHOUSE_ORDER;
 
 /*
 Driver function, Generates lyrics
@@ -752,4 +772,3 @@ function createSlidesPresentation() {
   presentation.saveAndClose();
   Logger.log('Lyrics Slide Asset Generated with URL: ' + presentation.getUrl());
 }
-
